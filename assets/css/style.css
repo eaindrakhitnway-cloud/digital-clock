@@ -1,0 +1,66 @@
+:root {
+  --theme-color: rgb(218, 135, 180);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #4b4848;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  .card {
+    background-color: white;
+    max-width: 350px;
+    min-width: 400px;
+    text-align: center;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    h1 {
+      background-color: var(--theme-color);
+      padding: 1rem 0;
+      color: white;
+      font-size: 2.5rem;
+    }
+    .btn-container {
+      margin: 1rem 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      button {
+        background-color: var(--theme-color);
+        color: white;
+        padding: 0.4rem 1rem;
+        border: 0;
+        border-radius: 0.2rem;
+      }
+    }
+    .theme-container {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+      button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+      }
+      .btn1 {
+        background-color: purple;
+      }
+      .btn2 {
+        background-color: yellow;
+      }
+      .btn3 {
+        background-color: blue;
+      }
+      .btn4 {
+        background-color: pink;
+      }
+    }
+  }
+}
